@@ -1,4 +1,4 @@
-# Automated-student-attendance-monitoring-and-analytics-system-for-colleges
+
 # 🎓 Automated Student Attendance Monitoring and Analytics System for Colleges
 
 ## 📌 Project Overview
