@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.PROD ? 'https://automated-student-attendance-monitoring-kbmz.onrender.com/api' : '/api',
 });
 
 api.interceptors.request.use((config) => {
