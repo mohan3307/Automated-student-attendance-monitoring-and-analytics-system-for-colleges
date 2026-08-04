@@ -10,3 +10,5 @@ services:
         value: 20
       - key: PORT
         value: 10000
+      - key: JWT_SECRET
+        value: supersecretjwtkey123
