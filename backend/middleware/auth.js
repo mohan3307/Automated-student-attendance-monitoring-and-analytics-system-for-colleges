@@ -10,7 +10,8 @@ function authenticate(req, res, next) {
   }
 
   try {
-    const payload = jwt.verify(token, process.env.JWT_SECRET);
+    const secret = process.env.JWT_SECRET || 'fallback_secret_key_12345';
+    const payload = jwt.verify(token, secret);
     req.user = payload; // { id, name, email, role }
     next();
   } catch (err) {

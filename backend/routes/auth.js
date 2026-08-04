@@ -8,9 +8,10 @@ const { authenticate } = require('../middleware/auth');
 const router = express.Router();
 
 function signToken(user) {
+  const secret = process.env.JWT_SECRET || 'fallback_secret_key_12345';
   return jwt.sign(
     { id: user.id, name: user.name, email: user.email, role: user.role },
-    process.env.JWT_SECRET,
+    secret,
     { expiresIn: process.env.JWT_EXPIRES_IN || '7d' }
   );
 }
