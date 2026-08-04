@@ -16,8 +16,9 @@ api.interceptors.response.use(
     if (err.response?.status === 401) {
       localStorage.removeItem('attendedge_token');
       localStorage.removeItem('attendedge_user');
-      if (!window.location.pathname.startsWith('/login')) {
-        window.location.href = '/login';
+      const loginPath = `${import.meta.env.BASE_URL}login`.replace(/\/+/g, '/');
+      if (!window.location.pathname.endsWith('/login')) {
+        window.location.href = loginPath;
       }
     }
     return Promise.reject(err);
