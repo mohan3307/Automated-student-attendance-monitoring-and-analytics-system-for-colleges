@@ -1,4 +1,12 @@
+## 🔗 Project Links
+
+- 🚀 **Live Deployment:** [AttendEdge – Automated Student Attendance Monitoring & Analytics System](https://mohan3307.github.io/Automated-student-attendance-monitoring-and-analytics-system-for-colleges/login)
+- 🎥 **Prototype Explanation:** [View Prototype Explanation](https://drive.google.com/file/d/1zZpjPRrc5Ju6hi6qCnlJFYGEywTo6BlU/view?usp=drive_link)
+
 # AttendEdge — Automated Student Attendance Monitoring & Analytics System
+
+A full-stack web application for colleges to record daily attendance and
+track attendance trends, at-risk students, and per-course analytics.# AttendEdge — Automated Student Attendance Monitoring & Analytics System
 
 A full-stack web application for colleges to record daily attendance and
 track attendance trends, at-risk students, and per-course analytics.
